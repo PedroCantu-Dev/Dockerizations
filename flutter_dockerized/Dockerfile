@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     apt-get clean
 
 # Install Flutter SDK
-ENV FLUTTER_VERSION=3.29.0
+ENV FLUTTER_VERSION=3.29.3
 RUN curl -L https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_${FLUTTER_VERSION}-stable.tar.xz | tar -xJ -C /opt \
     && ln -s /opt/flutter/bin/flutter /usr/local/bin/flutter
 
